@@ -1,10 +1,10 @@
 module "five-labels-infra" {
-  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git"
+  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.1"
 #===================Google_storage_bucket=====================
-bucket-name             = "petrosyangeorge.com"
-bucket-storage-class    = "NEARLINE"
-bucket-location         = "us-central1"
-bucket-level-access     =  true
+website-bucket-name             = "petrosyangeorge.com"
+website-bucket-storage-class    = "NEARLINE"
+website-bucket-location         = "us-central1"
+website-bucket-level-access     =  true
 
 #=============================================================
 #===================Google_cloud_run_service==================
