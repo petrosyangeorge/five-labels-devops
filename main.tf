@@ -1,5 +1,6 @@
 module "five-labels-infra" {
   source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.1"
+  
   #===================Google_storage_bucket=====================
   website-bucket-name          = "petrosyangeorge.com"
   website-bucket-storage-class = "NEARLINE"
@@ -21,5 +22,4 @@ module "five-labels-infra" {
   pg-user-password                   = "sqlname123"
 
   #==============================================================
-  
 }
