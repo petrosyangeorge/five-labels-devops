@@ -4,7 +4,7 @@ terraform {
     organization  = "devopsg2022"
 
     workspaces {
-      name = "gcpcode"
+      name = "five-labels-devops"
     }
   }
   required_providers {
@@ -20,7 +20,6 @@ provider "google" {
   project = "terraform-gcp-362210"
   region = "us-central1"
   zone = "us-central1-a"
-  credentials = "keys.json"
 }
 
 
