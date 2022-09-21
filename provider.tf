@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
-    hostname      = "app.terraform.io"
-    organization  = "devopsg2022"
+    hostname     = "app.terraform.io"
+    organization = "devopsg2022"
 
     workspaces {
       name = "five-labels-devops"
@@ -9,7 +9,7 @@ terraform {
   }
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "4.35.0"
     }
   }
@@ -18,8 +18,8 @@ terraform {
 provider "google" {
   # Configuration options
   project = "terraform-gcp-362210"
-  region = "us-central1"
-  zone = "us-central1-a"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 }
 
 
