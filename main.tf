@@ -7,6 +7,12 @@ module "five-labels-infra" {
   website-bucket-location      = "us-central1"
   website-bucket-level-access  = true
 
+  #===================Google_storage_admin_bucket=====================
+  website-admin-bucket-name          = "admin.petrosyangeorge.com"
+  website-admin-bucket-storage-class = "NEARLINE"
+  website-admin-bucket-location      = "us-central1"
+  website-admin-bucket-level-access  = true
+
   #===================Google_cloud_run_service==================
   cloudrun-service-name     = "gcp-cloudrun"
   cloudrun-service-location = "us-central1"
