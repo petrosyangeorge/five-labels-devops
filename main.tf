@@ -6,12 +6,16 @@ module "five-labels-infra" {
   website-bucket-storage-class = "NEARLINE"
   website-bucket-location      = "us-central1"
   website-bucket-level-access  = true
+  website-bucket-role          = "roles/storage.objectViewer"
+  website-bucket-member        = "allUsers"
 
   #===================Google_storage_admin_bucket=====================
   website-admin-bucket-name          = "admin.petrosyangeorge.com"
   website-admin-bucket-storage-class = "NEARLINE"
   website-admin-bucket-location      = "us-central1"
   website-admin-bucket-level-access  = true
+  website-admin-bucket-role          = "roles/storage.objectViewer"
+  website-admin-bucket-member        = "allUsers"
 
   #===================Google_cloud_run_service==================
   cloudrun-service-name     = "gcp-cloudrun"
