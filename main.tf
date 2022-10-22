@@ -1,5 +1,5 @@
 module "five-labels-infra" {
-  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.8"
+  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.9"
 
   #===================Google_storage_bucket=====================
   website-bucket-name          = "petrosyangeorge.com"
