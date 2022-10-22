@@ -1,5 +1,5 @@
 module "five-labels-infra" {
-  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.5"
+  source = "git::https://github.com/petrosyangeorge/five-labels-infra.git?ref=v1.0.8"
 
   #===================Google_storage_bucket=====================
   website-bucket-name          = "petrosyangeorge.com"
@@ -30,5 +30,7 @@ module "five-labels-infra" {
   db-pg-instance-tier                = "db-f1-micro"
   pg-user-name                       = "sqlname"
   pg-user-password                   = "sqlname123"
+  pg-authorized-name                 = "name-example"
+  pg-authorized-ip                   = "pg-authorized-ip"
 
 }
